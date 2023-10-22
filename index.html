@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Web Studio Homework Project</title>
+
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+ <link
+ rel="stylesheet"
+ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+/>
+
+ <link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body class="container">
+
+    <div class="modal is-hidden" data-modal>
+        <div class="modal-content">
+            <svg class="close-btn" data-modal-close>
+                <use href="./symbol-defs.svg#icon-close-button"></use>
+              </svg>
+
+            <form action="" method="get" autocomplete="off" class="contact-form">
+
+                <span class="title-form">Leave your information and we'll call you back</span>
+
+                <div class="form-section">
+                    
+                    <label class="form-label" for="name">Name</label>
+                  <div class="input-container">
+                    <input
+                class="textfield"
+                type="text"
+                name="name"
+                id="name"
+                required
+              />
+                    <svg>
+                      <use href="./symbol-defs.svg#icon-person"></use>
+                    </svg>
+                  </div>
+                </div>
+               
+
+                <div class="input-container">
+                    <label class="form-label" for="phone">Telephone</label>
+                    <div class="input-container">
+                        <input 
+                        class="textfield"
+                        type="tel"
+                        name="phone_number"
+                        id="tel"
+                      required
+                       />
+                        <svg>
+                            <use href="./symbol-defs.svg#icon-phone"></use>
+                        </svg>
+                    </div>
+                    </div>
+
+                    
+                <div class="input-container">
+                    <label class="form-label" for="email">Email</label>
+                  <div class="input-container">
+                    <input
+                class="textfield"
+                type="text"
+                name="email"
+                id="email"
+                pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                required
+              />
+                    <svg>
+                      <use href="./symbol-defs.svg#icon-email"></use>
+                    </svg>
+                  </div>
+                </div>
+      
+                <div class="input-container">
+                    <label class="form-label">Comments</label>
+                    <textarea placeholder="Enter the text"></textarea>
+                  </div>
+
+
+ <div class="input-container terms-and-conditions-container">
+            <input
+              type="checkbox"
+              class="terms-and-conditions-check"
+              name="terms-and-conditions-check"
+              id="terms-and-conditions-check"
+              value="Checked"
+            />
+            <label
+              class="terms-and-conditions-label"
+              for="terms-and-conditions-check"
+            >
+            <span class="checkmark">
+              <svg class="icon-checkbox">
+                <use href="./symbol-defs.svg#icon-checkbox"></use>
+              </svg>
+              </span>
+              
+              <span>
+                I agree with the letter and accept the
+                <a href="#">Terms and Conditions</a>
+              </span>
+            </label>
+          </div>
+
+
+
+
+          <input type="submit" value="Send" class="button-form"/>
+        </form>
+      </div>
+      </div>
+     
+
+
+
+
+
+
+ 
+         <header class="global-header">
+     <a href="./logo.html"
+ target="_blank">
+
+ <div class="nav-container">
+ <span class="Web-header">Web</span>
+ <span class="Studio-header">Studio</span>
+ </a>
+
+ <nav class="main-navigation">
+     <ul>
+         <li> <div class="studio-border">
+             <a href="index.html" class="nav-link current">Studio</a>
+             </div>
+         </li>
+         <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+         <li><a href="#" class= "nav-link">Contacts</a></li>
+     </ul>
+ </nav>
+
+
+<nav class="contacts-header">
+
+ <div class="mail-header">
+     <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+     <svg class="icon-envelope">
+         <use href="./symbol-defs.svg#icon-envelope" />
+         </svg>
+  </div>
+
+<div class="phone-header">
+ <a href="tel:212-772-4150">212-772-4150</a>
+ <svg class="icon-smartphone">
+     <use href="./symbol-defs.svg#icon-smartphone" />
+ </svg>
+</div>  
+
+</nav>
+ 
+ </div>
+</header>
+
+ 
+
+<main class="container">
+ <section class="solutions-for-business">
+     <div class="image-overlay">
+     <h1>EFFECTIVE SOLUTIONS FOR <br>
+         YOUR BUSINESS</h1>
+         <button data-modal-open class="button">Request our service</button>
+ </section>
+
+
+
+ <section class="values-pictures">
+
+     <ul class="values">
+ 
+ <li class="value-item">
+     <div class="v-logo" style="text-align: center">
+         <svg class="v-icon">
+        <use href="./symbol-defs.svg#icon-group" />
+       </div>
+     <h3>ATTENTION TO DETAILS</h3>
+ <p>We go into all the details and processes of your business to develop a 
+     customized solution.
+ </p></li>
+
+
+ <li class="value-item">
+     <div class="v-logo" style="text-align: center">
+         <svg class="v-icon">
+        <use href="./symbol-defs.svg#icon-clock1" />
+       </div>
+     <h3>PUNCTUALITY</h3>
+ <p>With us, you can feel safe and secure. An important principle of the company: respect your time and deadlines.</p></li>
+
+ 
+ <li class="value-item">
+     <div class="v-logo" style="text-align: center">
+         <svg class="v-icon">
+        <use href="./symbol-defs.svg#icon-diagram1" />
+       </div>
+     <h3>PLANNING</h3>
+ <p>You will be able to observe and participate in every phase of solution 
+     development and implementation.</p></li>
+
+    
+ <li class="value-item">
+     <div class="v-logo" style="text-align: center">
+         <svg class="v-icon">
+        <use href="./symbol-defs.svg#icon-astronaut1" />
+       </div>
+     <h3>MODERN TECHNOLOGIES</h3>
+ <p>We use innovative tools to solve assigned tasks. It's time to simplify work processes.</p></li>
+     </ul>
+
+     </section>
+ </div>
+ </div>
+
+
+
+
+
+     <section class="what-we-do">
+<h2>What we do</h2>
+<ul>
+ <li>
+     <img src="./images/img1.jpg" alt="Website Creation" width="370" class="image"/>
+     <div class="overlay-text">Desktop Apps</div>
+ </li>
+ <li><img src="./images/img2.jpg" alt="Phone" width="370" />
+     <div class="overlay-text">Mobile APPS</div>
+ </li>
+ <li><img src="./images/img3.jpg" alt="Design" width="370" />
+     <div class="overlay-text">DESIGN SOLUTIONS</div>
+ </li>
+</ul>
+</section>
+
+
+
+<div class="team">
+ <h2>Our Team</h2>
+ <ul class="team-page1">
+ <li class="team-members">
+     <img src="./images/team-member1.jpg" alt="Product Designer picture" width="270" />
+ <h4>Christopher Walker</h4>
+ <p>Product Designer</p>
+
+ <div class="social-media-team">
+
+     <a class="socials-team">
+         <svg>
+        <use href="./symbol-defs.svg#icon-instagram2" />
+         </a>
+ 
+     <a class="socials-team">
+         <svg>
+        <use href="./symbol-defs.svg#icon-twitter1" />
+         </a>
+ 
+    <a class="socials-team">
+     <svg>
+    <use href="./symbol-defs.svg#icon-facebook1" />
+     </a>
+ 
+ <a class="socials-team">
+     <svg>
+    <use href="./symbol-defs.svg#icon-linkedin1" />
+ </a>
+ 
+ </div>
+ </li>
+
+ <li class="team-members">
+     <img src="./images/team-member2.jpg" alt="Frontend Developer picture" width="270"/>
+ <h4>Kylie Evans</h4>
+ <p>Frontend Developer</p>
+
+ <div class="social-media-team">
+
+     <a class="socials-team">
+         <svg>
+        <use href="./symbol-defs.svg#icon-instagram2" />
+         </a>
+ 
+     <a class="socials-team">
+         <svg>
+        <use href="./symbol-defs.svg#icon-twitter1" />
+         </a>
+ 
+    <a class="socials-team">
+     <svg>
+    <use href="./symbol-defs.svg#icon-facebook1" />
+     </a>
+ 
+ <a class="socials-team">
+     <svg>
+    <use href="./symbol-defs.svg#icon-linkedin1" />
+ </a>
+ </div>
+ </li>
+
+ <li class="team-members">
+     <img src="./images/team-member3.jpg" alt="Marketing Team member picture" width="270" />
+ <h4>Ryan Harris</h4>
+ <p>Marketing</p>
+
+ <div class="social-media-team">
+
+     <a class="socials-team">
+         <svg>
+        <use href="./symbol-defs.svg#icon-instagram2" />
+         </a>
+ 
+     <a class="socials-team">
+         <svg>
+        <use href="./symbol-defs.svg#icon-twitter1" />
+         </a>
+ 
+    <a class="socials-team">
+     <svg>
+    <use href="./symbol-defs.svg#icon-facebook1" />
+     </a>
+ 
+ <a class="socials-team">
+     <svg>
+    <use href="./symbol-defs.svg#icon-linkedin1" />
+ </a>
+ 
+ </div>
+ </li>
+
+ <li class="team-members">
+     <img src="./images/team-member4.jpg" alt="UI Designer picture" width="270" />
+ <h4>Tyler Moore</h4>
+ <p>UI Designer</p>
+
+ <div class="social-media-team">
+
+     <a class="socials-team">
+         <svg class="media">
+        <use href="./symbol-defs.svg#icon-instagram2" />
+         </a>
+ 
+     <a class="socials-team">
+         <svg class="media">
+        <use href="./symbol-defs.svg#icon-twitter1" />
+         </a>
+ 
+    <a class="socials-team">
+     <svg class="media">
+    <use href="./symbol-defs.svg#icon-facebook1" />
+     </a>
+ 
+ <a class="socials-team">
+     <svg class="media">
+    <use href="./symbol-defs.svg#icon-linkedin1" />
+ </a>
+ 
+ </div>
+ </li>
+
+ </ul>
+</section>
+
+
+<section class="regular-customers">
+ <h2>Regular Customers</h2>
+
+ <div class="customer-icons">
+ <a class="customers">
+      <svg class="icon-customers">
+     <use href="./symbol-defs.svg#icon-Logo-1" />
+      </a>
+
+ <a class="customers">
+     <svg class="icon-customers">
+    <use href="./symbol-defs.svg#icon-Logo1" />
+     </a>
+
+<a class="customers">
+ <svg class="icon-customers">
+<use href="./symbol-defs.svg#icon-Logo2" />
+ </a>
+
+<a class="customers">
+ <svg class="icon-customers">
+<use href="./symbol-defs.svg#icon-Logo3" />
+ </a>
+
+<a class="customers">
+ <svg class="icon-customers">
+<use href="./symbol-defs.svg#icon-Logo4" />
+ </a>
+
+<a class="customers" style="text-align: center">
+ <svg class="icon-customers">
+<use href="./symbol-defs.svg#icon-Logo5" />
+ </a>
+
+</div>
+</section>
+
+</main>
+
+
+<footer class="address">
+
+ <a href="./logo.html"
+ target="_blank">
+
+ <div class="address-container">
+
+ <span class="Web">Web</span>
+ <span class="Studio">Studio</span>
+ </a>
+
+ <address class="address-footer">Park Ave, NY 10065, USA</address>
+ <address class="contacts-footer">
+     <a href="mailto:info@devstudio.com" class="mail-footer">info@devstudio.com</a><br />
+     <a href="tel:+1212-772-4150" class="phone-number-footer">+1 212-772-4150</a>
+   </address>
+
+ </div>
+
+
+
+
+ <div class="find-us">
+     <p>Find us on</p>
+ <div class="social-media-links" style="text-align: center">
+
+     <div class="socials">
+         <svg class="socials-icon">
+        <use href="./symbol-defs.svg#icon-instagram" />
+    </div>
+ 
+     <div class="socials" style="text-align: center">
+         <svg class="socials-icon">
+        <use href="./symbol-defs.svg#icon-twitter" />
+    </div>
+ 
+    <div class="socials" style="text-align: center">
+     <svg class="socials-icon">
+    <use href="./symbol-defs.svg#icon-facebook" />
+   </div>
+ 
+ <div class="socials" style="text-align: center">
+     <svg class="socials-icon">
+    <use href="./symbol-defs.svg#icon-linkedin" />
+ </div>
+ 
+ </div>
+ </div>
+
+<div class="subscribe">
+    <p>Subscribe to the newsletter</p>
+
+    
+    <form class="subscribe-form">
+
+        <div class="input-subscribe">
+            <label class="form-label-subscribe" for="email"></label>
+          <div class="input-subscribe">
+            <input
+        class="input-email"
+        type="email"
+        name="email"
+        id="email"
+        placeholder="E-mail"
+        pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+        required
+      />
+
+<button type="submit" class="button-subscribe">
+<span>Subscribe</span>
+<svg>
+    <use href="./symbol-defs.svg#icon-send" />
+ </div>
+</button>
+          </div>
+    </form>
+    
+
+</div>
+</footer>
+
+<script src="./js/modal.js"></script>
+</body>
+</html>
