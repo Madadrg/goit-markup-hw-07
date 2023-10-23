@@ -283,9 +283,7 @@ color: #FFFFFF;
 
 
 .global-header .main-navigation ul {
-    display: flex; 
-    justify-content: space-between;
-    gap: 50px;
+    display: none;
 }
 
 .nav-container {
@@ -295,6 +293,19 @@ color: #FFFFFF;
     margin-left: 140px;
 }
 
+
+.nav-container-mobile {
+    top: 24px;
+    right:16px;
+    padding: 1.43px, 1.11px, 1.96px, 1.35px;
+    position: absolute;
+    }
+        
+    
+    .nav-container-mobile svg {
+        width: 32px;
+        height: 22px;
+    }
 
 .solutions-for-business h1 {
     padding-top: 200px;
@@ -311,19 +322,10 @@ color: #FFFFFF;
     text-align: left;
 }
 
-.what-we-do ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    margin-bottom: 94px;
-}
 
-.what-we-do h2{
-    padding-bottom: 50px;
+.what-we-do {
+    display:none;
 }
-
 
 .team h2 {
     padding-top: 94px;
@@ -336,14 +338,15 @@ color: #FFFFFF;
 }
 
 .team ul{
-    display: flex;
+    display: block;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 30px;
+    margin-right: 82px;
+    margin-left: 82px;
     padding-bottom: 94px;
 }
-
 
 
 
@@ -382,6 +385,17 @@ color: #FFFFFF;
     margin: 0px;
 }
 
+.values-pictures .v-logo {
+    display:none;
+}
+
+.values {
+    display: block;
+}
+
+.value-item:not(:last-child) {
+    padding-bottom: 72px;
+}
 
 
 .portfolio-container {
@@ -999,6 +1013,7 @@ margin-left: 12px;
 
 .input-email {
     color: white;
+    padding: 20px;
 }
 
 .button-subscribe {
@@ -1086,6 +1101,17 @@ width: 100%;
     letter-spacing: 0.03em;
     color: #757575;
   }
+  .nav-container-mobile {
+  top: 24px;
+  left: 380px;
+  padding: 1.43px, 1.11px, 1.96px, 1.35px;
+  }
+      
+  
+  .nav-container-mobile svg {
+      width: 32px;
+      height: 22px;
+  }
   
   .terms-and-conditions span a {
     color: #2196f3;
@@ -1136,3 +1162,64 @@ margin-right: auto;
 background-color: var(--highlight-color);
 border-color: var(--highlight-color);
 }
+
+
+
+
+
+
+/* Tablet */
+@media screen and (min-width:768px) {
+}
+    
+
+/* Desktop */
+@media screen and (min-width:1158px) {
+    .global-header .main-navigation ul {
+        display: flex; 
+        justify-content: space-between;
+        gap: 50px;    
+    }
+    
+    .v-logo {
+        width: 270px;
+        height: 120px;
+        border-radius: 4px;
+        background: #F5F4FA;
+       }
+       
+    .what-we-do ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        margin-bottom: 94px;
+    }
+    
+    .what-we-do h2{
+        padding-bottom: 50px;
+    }
+    
+    .team ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        padding-bottom: 94px;
+    }
+
+    
+
+    .customer-icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        margin-bottom: 94px;
+    }
+    }
+
+
