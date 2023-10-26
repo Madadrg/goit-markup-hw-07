@@ -1121,6 +1121,7 @@ margin-left: 12px;
     justify-content: center;
     align-items: center;
     padding-bottom: 16px;
+    padding-left: 12px;
 }
 
 .input-email {
@@ -1434,6 +1435,7 @@ gap: 20px;
 .social-media-mobile {
     margin-top: 64px;
 }
+
 
 
 
@@ -2271,13 +2273,11 @@ color:#2196F3;
 }
 
 
-
 .image-background {
     background-image: url("../images/image-background.jpg");
 }
 .image-background{
 width: 768px;
-height: 400px;
 background-image: url("../images/image-background.jpg");
 background-size: 768px 400px;
 }
@@ -2289,6 +2289,7 @@ background-size: 768px 400px;
   .image-background {
     background-image: url("../images/image-background@2x.jpg");
   }
+
 
 
 
