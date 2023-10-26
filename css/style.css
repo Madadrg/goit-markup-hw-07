@@ -312,9 +312,6 @@ color: #FFFFFF;
         margin-right: 16px;
     }
 
-    .nav-container {
-        margin-top: 24px;
-    }
    
       .mobile-menu {
         display: none;
@@ -363,13 +360,11 @@ color: #FFFFFF;
 }
 
 .team ul{
-    display: block;
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 30px;
-    margin-right: 82px;
-    margin-left: 82px;
     padding-bottom: 94px;
 }
 
@@ -534,7 +529,6 @@ padding-top: 0px;
 
 .address-container {
     padding-top: 60px;
-    padding-bottom: 28px;
     display: block;
     justify-content: center;
     align-items: center;
@@ -549,7 +543,6 @@ padding-top: 0px;
 
 .address-footer{
     padding-top: 28px;
-    padding-bottom: 12px;
 }
 
 .contacts-footer .mail-footer {
@@ -684,7 +677,7 @@ padding-top: 0px;
 
 .customer-icons {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 30px;
@@ -742,7 +735,6 @@ padding-top: 0px;
 }
 
 .find-us {
-    margin-bottom: 96px;
     margin-left: 70px;
 }
 
@@ -1097,7 +1089,6 @@ border-color: var(--highlight-color);
   .subscribe {
    border-radius: 4px;
    margin-top: 72px;
-   margin-bottom: 93px;
    margin-left: 93px;
    margin-right: 215px;
 }
@@ -1116,7 +1107,7 @@ margin-left: 12px;
 
 
   .input-subscribe {
-    width: 570px;
+    width: 20%;
     display: block;
     justify-content: center;
     align-items: center;
@@ -1331,7 +1322,7 @@ border-color: var(--highlight-color);
     top: 0;
     right: 0;
     background-color: #fff;
-    width: 480px;
+    width: 430px;
     height: 100%;
     padding: 48px 40px;
     z-index: 1;
@@ -1439,7 +1430,6 @@ gap: 20px;
 
 
 
-
 /* Tablet */
 @media screen and (min-width:768px) {
 
@@ -1458,6 +1448,15 @@ margin-bottom: 15px;
         justify-content: space-between;
         }
 
+
+        .team ul{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            padding-bottom: 94px;
+        }
 
         .contacts-header {
             display: block;
@@ -1498,6 +1497,7 @@ margin-bottom: 15px;
     .customer-icons {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         gap: 30px;
@@ -1507,7 +1507,6 @@ margin-bottom: 15px;
     .subscribe {
         border-radius: 4px;
         margin-top: 72px;
-        margin-bottom: 93px;
         margin-left: 93px;
         margin-right: 215px;
      }
@@ -1591,7 +1590,6 @@ margin-bottom: 15px;
         
         .address-container {
             padding-top: 60px;
-            padding-bottom: 28px;
             margin-left: 215px;
             width: 268px;
         }
@@ -1599,7 +1597,6 @@ margin-bottom: 15px;
         
         .address-footer{
             padding-top: 28px;
-            padding-bottom: 12px;
         }
         
         .contacts-footer .mail-footer {
@@ -1621,7 +1618,6 @@ margin-bottom: 15px;
         
         .find-us {
             margin-top: 75px;
-            margin-bottom: 96px;
             margin-left: 70px;
         }
         
@@ -1644,7 +1640,6 @@ margin-bottom: 15px;
         .subscribe {
            border-radius: 4px;
            margin-top: 72px;
-           margin-bottom: 93px;
            margin-left: 93px;
            margin-right: 215px;
         }
@@ -2025,7 +2020,6 @@ color: #FFFFFF;
     
     .address-container {
         padding-top: 60px;
-        padding-bottom: 28px;
         margin-left: 215px;
         width: 20%;
     }
@@ -2033,7 +2027,6 @@ color: #FFFFFF;
     
     .address-footer{
         padding-top: 28px;
-        padding-bottom: 12px;
     }
     
     .contacts-footer .mail-footer {
@@ -2044,18 +2037,15 @@ color: #FFFFFF;
     .contacts-footer .phone-number-footer {
         display: flex;
         padding-top: 12px;
-        padding-bottom: 60px;
     }
     
     
     .address-footer{
         padding-top: 28px;
-        padding-bottom: 12px;
     }
     
     .find-us {
         margin-top: 75px;
-        margin-bottom: 96px;
         margin-left: 70px;
     }
     
@@ -2078,7 +2068,6 @@ color: #FFFFFF;
     .subscribe {
        border-radius: 4px;
        margin-top: 72px;
-       margin-bottom: 93px;
        margin-left: 93px;
        margin-right: 215px;
     }
