@@ -20,6 +20,8 @@
 
 <body class="container">
 
+    
+
     <div class="modal is-hidden" data-modal>
         <div class="modal-content">
             <svg class="close-btn" data-modal-close>
@@ -129,6 +131,7 @@
 
  
          <header class="global-header">
+
      <a href="./logo.html"
  target="_blank">
 
@@ -149,9 +152,9 @@
  </nav>
 
 
- <div class="nav-container-mobile">
+ <div class="menu-button js-open-menu">
   
-      <svg>
+      <svg class="menu-bar">
         <use href="./symbol-defs.svg#icon-menu-bar" />
       </svg>
 </div>
@@ -178,6 +181,34 @@
 
 
  </div>
+
+
+ <div class="js-menu-container">
+    <button class="menu-toggle js-close-menu">
+        <svg class="icon-close">
+          <use href="./symbol-defs.svg#icon-close" />
+        </svg>
+      </button>
+
+        <nav class="menu-drawer-navigation">
+            <ul class="menu-mobile">
+              <li><a href="#about" class="active">Studio</a></li>
+              <li><a href="#services">Portfolio</a></li>
+              <li><a href="#">Contacts</a></li>
+            </ul>
+
+            <div class="contacts-mobile-menu">
+            <a href="tel:212-772-4150" class="tel">212-772-4150</a>
+            <a href="mailto:info@devstudio.com" class="mail">info@devstudio.com</a>
+        </div>
+
+        <div class="social-media-mobile">
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+            <a href="#">Facebook</a>
+            <a href="#">LinkedIn</a>
+        </div>
+            </nav>
 </header>
 
 
@@ -260,6 +291,7 @@
  </li>
 </ul>
 </section>
+
 
 
 <div class="team">
@@ -387,48 +419,45 @@
 </section>
 
 
+
 <section class="regular-customers">
-
-    <div class="regular-customers-section">
- <h2>Regular Customers</h2>
-
- <div class="customer-icons">
- <a class="customers">
-      <svg class="icon-customers">
-     <use href="./symbol-defs.svg#icon-Logo-1" />
-      </a>
-
- <a class="customers">
-     <svg class="icon-customers">
-    <use href="./symbol-defs.svg#icon-Logo1" />
-     </a>
-
-<a class="customers">
- <svg class="icon-customers">
-<use href="./symbol-defs.svg#icon-Logo2" />
- </a>
-
-<a class="customers">
- <svg class="icon-customers">
-<use href="./symbol-defs.svg#icon-Logo3" />
- </a>
-
-<a class="customers">
- <svg class="icon-customers">
-<use href="./symbol-defs.svg#icon-Logo4" />
- </a>
-
-<a class="customers" style="text-align: center">
- <svg class="icon-customers">
-<use href="./symbol-defs.svg#icon-Logo5" />
- </a>
-
-</div>
-
-</div>
-</section>
-
-</main>
+    <h2>Regular Customers</h2>
+   
+    <div class="customer-icons">
+    <a class="customers">
+         <svg class="icon-customers">
+        <use href="./symbol-defs.svg#icon-Logo-1" />
+         </a>
+   
+    <a class="customers">
+        <svg class="icon-customers">
+       <use href="./symbol-defs.svg#icon-Logo1" />
+        </a>
+   
+   <a class="customers">
+    <svg class="icon-customers">
+   <use href="./symbol-defs.svg#icon-Logo2" />
+    </a>
+   
+   <a class="customers">
+    <svg class="icon-customers">
+   <use href="./symbol-defs.svg#icon-Logo3" />
+    </a>
+   
+   <a class="customers">
+    <svg class="icon-customers">
+   <use href="./symbol-defs.svg#icon-Logo4" />
+    </a>
+   
+   <a class="customers" style="text-align: center">
+    <svg class="icon-customers">
+   <use href="./symbol-defs.svg#icon-Logo5" />
+    </a>
+   
+   </div>
+   </section>
+   
+   </main>
 
 
 <footer class="address">
@@ -516,6 +545,13 @@
 </div>
 </footer>
 
+<script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
 <script src="./js/modal.js"></script>
+<script src="./js/mobile-menu.js"></script>
 </body>
 </html>
