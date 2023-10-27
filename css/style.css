@@ -158,7 +158,6 @@ p {
 
 .contacts-header {
     display: flex;
-    gap: 40px;
 }
 
 .contacts-header a:hover,
@@ -971,9 +970,7 @@ border-color: var(--highlight-color);
     height: 48px;
    }
 
-   .global-header {
-    height: 115px;
-   }
+ 
 
    
 
@@ -1159,7 +1156,7 @@ margin-top: 16px;
   }
 
 .input-email {
-width: 358px;
+width: auto;
 height: 50px;
 border-radius: 4px;
 border: 1px;
@@ -1459,9 +1456,11 @@ margin-bottom: 15px;
         
 
         .contacts-header {
-            display: block;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
         }
-        
          
 
         .contacts-header a:hover,
@@ -1664,10 +1663,7 @@ margin-bottom: 15px;
             display: none;
         }
 
-    .contacts-header {
-        display: block;
-    }
-
+  
 
 .customers {
     width: 170px;
