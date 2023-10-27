@@ -445,8 +445,6 @@ color: #FFFFFF;
     background-color: #FFFFFF;
     padding-top: 94px;
     padding-bottom: 94px;
-    margin-left: 100px;
-    margin-right: 70px;
 }
 
 .v-pictures {
@@ -567,6 +565,7 @@ padding-top: 0px;
 }
 
 .icon-smartphone {
+    height: 20px;
     width: 10px;
     flex-shrink: 0;
 }
@@ -1339,6 +1338,7 @@ border-color: var(--highlight-color);
   }
 
   .menu-drawer-navigation {
+    width: 100%;
     display: flex;
     flex-direction: column;
   }
@@ -1418,9 +1418,11 @@ padding-bottom: 48px;
 color: var(--highlight-color);
 margin-left: 40px;
 gap: 20px;
+width: 100%;
 }
 
 .social-media-mobile {
+    width: 100%;
     margin-top: 64px;
 }
 
@@ -1753,8 +1755,6 @@ margin-bottom: 15px;
     background-color: #FFFFFF;
     padding-top: 94px;
     padding-bottom: 94px;
-    margin-left: 100px;
-    margin-right: 70px;
 }
 
 .v-pictures {
